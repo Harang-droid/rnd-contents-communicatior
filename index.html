@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R&D 콘텐츠 커뮤니케이터 - 대전 기술의 가치를 세상에</title>
+    <title>베타 파트너 신청 - R&D 콘텐츠 커뮤니케이터</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -16,630 +16,473 @@
             font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
             color: #333;
-            background: #ffffff;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #f0f0f0;
-            z-index: 1000;
-            padding: 15px 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 30px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .nav-container a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
-
-        .nav-container a:hover {
-            color: #0A68FF;
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 70px;
-            padding: 100px 30px 80px;
             background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0A68FF 0%, #0052CC 100%);
+            color: white;
+            padding: 60px 40px;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 3em;
+        .header h1 {
+            font-size: 2.5em;
             font-weight: 900;
-            color: #0A68FF;
             margin-bottom: 20px;
             line-height: 1.3;
         }
 
-        .hero h2 {
-            font-size: 2.2em;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 40px;
-            line-height: 1.4;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3em;
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-
-        .hero-cta {
-            margin-top: 50px;
-        }
-
-        /* Section Styles */
-        section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 80px 30px;
-        }
-
-        section h2 {
-            font-size: 2.2em;
-            font-weight: 900;
-            color: #333;
-            margin-bottom: 40px;
-            position: relative;
-            padding-bottom: 20px;
-        }
-
-        section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: #FFC107;
-        }
-
-        /* Problem Section */
-        .problem {
-            background: #fafafa;
-        }
-
-        .problem-list {
-            display: grid;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .problem-item {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            border-left: 4px solid #0A68FF;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .problem-item h3 {
-            font-size: 1.4em;
-            color: #0A68FF;
-            margin-bottom: 15px;
-        }
-
-        .problem-item p {
-            color: #666;
-            font-size: 1.05em;
-        }
-
-        /* Solution Section */
-        .solution {
-            background: white;
-        }
-
-        .solution-box {
-            background: linear-gradient(135deg, #0A68FF 0%, #0052CC 100%);
-            color: white;
-            padding: 50px;
-            border-radius: 16px;
-            margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(10, 104, 255, 0.2);
-        }
-
-        .solution-box p {
-            font-size: 1.3em;
-            line-height: 2;
-            margin-bottom: 20px;
-        }
-
-        .solution-box strong {
-            color: #FFC107;
-            font-weight: 700;
-        }
-
-        /* Benefits Section */
-        .benefits {
-            background: #fafafa;
-        }
-
-        .benefit-grid {
-            display: grid;
-            gap: 40px;
-            margin-top: 50px;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-
-        .benefit-number {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background: #FFC107;
-            color: #333;
-            font-size: 1.5em;
-            font-weight: 900;
-            border-radius: 50%;
-            line-height: 50px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .benefit-card h3 {
-            font-size: 1.6em;
-            color: #0A68FF;
-            margin-bottom: 20px;
-        }
-
-        .benefit-card p {
-            color: #666;
-            font-size: 1.1em;
-        }
-
-        /* Trust Section */
-        .trust {
-            background: white;
-        }
-
-        .trust-grid {
-            display: grid;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .trust-item {
-            padding: 30px;
-            background: #f8f9ff;
-            border-radius: 12px;
-            border: 2px solid #0A68FF;
-        }
-
-        .trust-item h3 {
-            font-size: 1.4em;
-            color: #0A68FF;
-            margin-bottom: 15px;
-        }
-
-        .trust-item ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .trust-item li {
-            padding: 8px 0;
-            padding-left: 25px;
-            position: relative;
-            color: #666;
-        }
-
-        .trust-item li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #FFC107;
-            font-weight: bold;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: #fafafa;
-        }
-
-        .pricing-box {
-            background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
-            padding: 50px;
-            border-radius: 16px;
-            margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(255, 193, 7, 0.3);
-            text-align: center;
-        }
-
-        .pricing-box h3 {
-            font-size: 2em;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .pricing-benefits {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
-            text-align: left;
-        }
-
-        .pricing-benefits h4 {
-            font-size: 1.4em;
-            color: #0A68FF;
-            margin-bottom: 20px;
-        }
-
-        .pricing-benefits ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .pricing-benefits li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            font-size: 1.1em;
-            color: #333;
-        }
-
-        .pricing-benefits li::before {
-            content: '🎁';
-            position: absolute;
-            left: 0;
-        }
-
-        .condition {
-            background: rgba(255, 255, 255, 0.3);
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            font-size: 0.95em;
-            color: #333;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #0A68FF 0%, #0052CC 100%);
-            color: white;
-            text-align: center;
-            padding: 100px 30px;
-        }
-
-        .cta-section h2 {
-            color: white;
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        .cta-section h2::after {
-            display: none;
-        }
-
-        .cta-section p {
-            font-size: 1.3em;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .cta-highlight {
-            background: rgba(255, 193, 7, 0.2);
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
-            font-size: 1.4em;
-            font-weight: 700;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 18px 40px;
+        .header p {
             font-size: 1.2em;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+
+        .highlight {
+            background: rgba(255, 193, 7, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
             font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s;
-            border: none;
+        }
+
+        /* Form Container */
+        .form-container {
+            padding: 50px 40px;
+        }
+
+        .required-notice {
+            background: #f8f9ff;
+            border-left: 4px solid #0A68FF;
+            padding: 15px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .required-notice p {
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        /* Form Groups */
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .required {
+            color: #0A68FF;
+            font-size: 1.2em;
+            margin-left: 4px;
+        }
+
+        .optional {
+            color: #999;
+            font-size: 0.9em;
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Noto Sans KR', sans-serif;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0A68FF;
+            box-shadow: 0 0 0 3px rgba(10, 104, 255, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .helper-text {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        /* Checkbox */
+        .checkbox-group {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 8px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            margin-top: 2px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .privacy-link {
+            color: #0A68FF;
+            text-decoration: underline;
             cursor: pointer;
         }
 
-        .btn-primary {
-            background: #FFC107;
-            color: #333;
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+        /* Submit Button */
+        .submit-container {
+            text-align: center;
+            margin-top: 40px;
         }
 
-        .btn-primary:hover {
+        .btn-submit {
+            background: #FFC107;
+            color: #333;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.3em;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
             background: #FFB300;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
         }
 
-        .btn-secondary {
-            background: white;
-            color: #0A68FF;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        .btn-submit:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
         }
 
-        .btn-secondary:hover {
-            background: #f8f9ff;
-            transform: translateY(-2px);
+        /* Success Page */
+        .success-page {
+            display: none;
+            text-align: center;
+            padding: 80px 40px;
         }
 
-        /* Emoji Icons */
-        .section-icon {
-            font-size: 3em;
-            margin-bottom: 20px;
+        .success-page.active {
             display: block;
+        }
+
+        .success-icon {
+            font-size: 5em;
+            margin-bottom: 30px;
+        }
+
+        .success-page h2 {
+            font-size: 2.5em;
+            color: #0A68FF;
+            margin-bottom: 20px;
+        }
+
+        .success-page p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #0A68FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .btn-home:hover {
+            background: #0052CC;
+            transform: translateY(-2px);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
+            .header {
+                padding: 40px 20px;
             }
 
-            .hero h2 {
-                font-size: 1.5em;
-            }
-
-            .hero-subtitle {
-                font-size: 1.1em;
-            }
-
-            section {
-                padding: 50px 20px;
-            }
-
-            section h2 {
+            .header h1 {
                 font-size: 1.8em;
             }
 
-            .solution-box, .pricing-box {
+            .header p {
+                font-size: 1em;
+            }
+
+            .form-container {
                 padding: 30px 20px;
             }
 
-            .benefit-card {
-                padding: 25px;
+            .btn-submit {
+                width: 100%;
+                font-size: 1.1em;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#problem">문제</a>
-            <a href="#solution">솔루션</a>
-            <a href="#benefits">혜택</a>
-            <a href="#trust">신뢰</a>
-            <a href="#pricing">가격</a>
-            <a href="#cta">신청</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>스타트업 R&D의 '설명하기 어려운 기술',</h1>
-        <h2>투자자와 대중이 열광하는 '쉬운 콘텐츠'로 만듭니다.</h2>
-        <p class="hero-subtitle">유튜브 운영 및 연극 경험이 있는 공학 전공자가 기술을 스토리로 기획하고, 유튜브 영상으로 완성합니다.</p>
-        <p class="hero-subtitle">귀사의 기술 가치를 100% 전달할 'R&D 콘텐츠 커뮤니케이터'를 만나보세요.</p>
-        <div class="hero-cta">
-            <a href="#cta" class="btn btn-primary">베타 파트너 신청하기 →</a>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section id="problem" class="problem">
-        <span class="section-icon">😠</span>
-        <h2>우리 기술, 좋은데... 설명이 어렵습니다.</h2>
-        <p style="font-size: 1.2em; color: #666; margin-bottom: 40px;">
-            훌륭한 기술력을 가졌음에도 불구하고, 그 가치를 제대로 알리지 못해 사업화와 투자 유치에 어려움을 겪고 계시진 않나요?
-        </p>
-        
-        <div class="problem-list">
-            <div class="problem-item">
-                <h3>높은 기술 장벽</h3>
-                <p>획기적인 기술이지만, 투자자나 일반 대중에게 1분 안에 그 가치를 설명하기 너무 어렵습니다.</p>
-            </div>
-            
-            <div class="problem-item">
-                <h3>엇박자 커뮤니케이션</h3>
-                <p>연구진은 홍보를 모르고, 홍보팀은 기술을 깊이 이해하지 못해 메시지가 왜곡되거나 핵심이 빠집니다.</p>
-            </div>
-            
-            <div class="problem-item">
-                <h3>사라지는 기회</h3>
-                <p>기술 사업화(IR), 정부 과제 보고, 대중 홍보의 '골든 타임'을 딱딱한 보고서와 PPT만 만들다 놓치고 있습니다.</p>
-            </div>
-            
-            <div class="problem-item">
-                <h3>지역적 한계</h3>
-                <p>혁신적인 기술력을 보유했지만, 전문적인 기술 홍보와 영상 콘텐츠 제작 리소스가 부족하여 효과적인 마케팅에 어려움을 겪고 있습니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section id="solution" class="solution">
-        <span class="section-icon">✨</span>
-        <h2>'R&D 콘텐츠 커뮤니케이터'가 직접 해결합니다.</h2>
-        <p style="font-size: 1.2em; color: #666; margin-bottom: 40px;">
-            'R&D 콘텐츠 커뮤니케이터'는 기술(Tech)과 소통(Communication), 그리고 미디어(Media)를 연결하는 융합형 전문가입니다.
-        </p>
-        
-        <div class="solution-box">
-            <p>우리는 <strong>공학 전공 배경</strong>으로 기술의 핵심을 꿰뚫고,</p>
-            <p><strong>연극 무대에서 검증된 스토리텔링 능력</strong>으로 메시지를 다듬으며,</p>
-            <p><strong>B2B 영상 제작</strong> 노하우로 가장 매력적인 콘텐츠를 만듭니다.</p>
-            <p style="margin-top: 30px; font-size: 1.1em; border-top: 2px solid rgba(255,255,255,0.3); padding-top: 30px;">
-                복잡한 기술(R&D)을 '이해하기 쉬운 언어'로 번역하고, '재미있는 PSA(공익광고)' 스타일로 제작하여 기술의 사업화와 대중화를 가속합니다.
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>R&D 콘텐츠 커뮤니케이터<br>베타 파트너 신청</h1>
+            <p>
+                선착순 3곳의 특별한 기회에 오신 것을 환영합니다.<br>
+                귀사의 훌륭한 기술이 더 많은 사람에게 닿을 수 있도록, 첫 번째 파트너가 되어주세요.<br>
+                아래 정보를 남겨주시면 <span class="highlight">영업일 기준 2일 이내</span>에 상담을 위한 연락을 드립니다.
             </p>
         </div>
-    </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
-        <span class="section-icon">🚀</span>
-        <h2>귀사의 기술이 대중의 언어가 됩니다.</h2>
-        <p style="font-size: 1.2em; color: #666; margin-bottom: 40px;">
-            'R&D 콘텐츠 커뮤니케이터'와 함께라면 3가지 핵심 가치를 얻을 수 있습니다.
-        </p>
-        
-        <div class="benefit-grid">
-            <div class="benefit-card">
-                <span class="benefit-number">1</span>
-                <h3>공학 전공자가 통역하는 '기술 전문성'</h3>
-                <p>공학 전공 및 연구 기관 경험을 바탕으로 기술 문서를 직접 분석합니다. 연구원과 마케터 사이의 불필요한 커뮤니케이션 비용이 사라집니다.</p>
+        <!-- Form Container -->
+        <div class="form-container" id="formContainer">
+            <div class="required-notice">
+                <p><strong>*</strong> 표시가 있는 항목은 필수 입력 항목입니다.</p>
             </div>
-            
-            <div class="benefit-card">
-                <span class="benefit-number">2</span>
-                <h3>연극 무대에서 단련된 '스토리텔링 파워'</h3>
-                <p>무대 위 관객 몰입 경험을 활용해 지루한 기술 설명을 공익광고(PSA)처럼 명쾌하고 재미있게 구성합니다.</p>
-            </div>
-            
-            <div class="benefit-card">
-                <span class="benefit-number">3</span>
-                <h3>기획부터 제작까지 'One-Stop 영상 솔루션'</h3>
-                <p>창업 동아리 BM 구축 경험과 유튜브 채널 운영 노하우로, 단순 영상 제작을 넘어 기술 사업화(IR) 및 투자 유치 목적에 맞는 콘텐츠를 기획하고 완성합니다.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Trust Section -->
-    <section id="trust" class="trust">
-        <span class="section-icon">🤝</span>
-        <h2>스타트업의 R&D를 가장 잘 아는 파트너</h2>
-        <p style="font-size: 1.2em; color: #666; margin-bottom: 40px;">
-            저희는 스타트업 생태계와 함께 성장하며 혁신 기술의 사업화를 돕는 것을 목표로 합니다.
-        </p>
-        
-        <div class="trust-grid">
-            <div class="trust-item">
-                <h3>MVP 계획 (포트폴리오)</h3>
-                <p>현재 "급부상하는 신기술 정책"을 주제로 한 대중적인 공익광고(PSA) 스타일의 유튜브 콘텐츠를 제작 중입니다. (문의 시 제작 중인 샘플 포트폴리오를 제공합니다.)</p>
-            </div>
-            
-            <div class="trust-item">
-                <h3>핵심 협력 대상</h3>
-                <p>R&D 스타트업, 기술 기반 기업 및 연구소와의 긴밀한 협력을 최우선으로 합니다. 혁신 기술의 홍보와 사업화를 전담할 전문 파트너로 성장하겠습니다.</p>
-            </div>
-            
-            <div class="trust-item">
-                <h3>검증된 역량 (문의 시 제공)</h3>
-                <ul>
-                    <li>공학 전공 배경 (기술 이해 및 분석 능력)</li>
-                    <li>연극 무대 경험 (스토리텔링 및 전달력)</li>
-                    <li>B2B 홍보 영상 제작 포트폴리오</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <form id="betaPartnerForm">
+                <!-- 회사/기관명 -->
+                <div class="form-group">
+                    <label for="company">
+                        회사/기관명<span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="company" 
+                        name="company" 
+                        placeholder="예: (주)OO기술, OO연구원" 
+                        required
+                    >
+                </div>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <span class="section-icon">🎁</span>
-        <h2>첫 번째 고객을 위한 특별 제안</h2>
-        <p style="font-size: 1.2em; color: #666; margin-bottom: 40px;">
-            R&D 콘텐츠 커뮤니케이터 서비스의 공식 런칭 전, 초기 파트너가 되어주실 <strong style="color: #0A68FF;">단 3곳의 R&D 스타트업/기업</strong>을 찾습니다.
-        </p>
-        
-        <div class="pricing-box">
-            <h3>MVP 베타 테스트 파트너 모집</h3>
-            
-            <div class="pricing-benefits">
-                <h4>파트너 혜택</h4>
-                <ul>
-                    <li>신기술/제품 홍보 영상 1편 (1분~1분 30초) 무료 제작</li>
-                    <li>정식 서비스 런칭 시 영상 3편 50% 할인</li>
-                </ul>
-            </div>
-            
-            <div class="condition">
-                <strong>조건:</strong> 제작된 콘텐츠를 당사의 포트폴리오로 활용하는 데 동의
-            </div>
-        </div>
-    </section>
+                <!-- 담당자 성함 -->
+                <div class="form-group">
+                    <label for="name">
+                        담당자 성함<span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="성함을 입력해주세요" 
+                        required
+                    >
+                </div>
 
-    <!-- CTA Section -->
-     <section id="cta" class="cta-section">
-        <h2>지금 바로 '기술 홍보'의 혁신을 경험하세요.</h2>
-        <p>복잡한 기술, 잠재된 가치.<br>이제 세상이 이해할 수 있도록 알려야 할 때입니다.</p>
-        
-        <div class="cta-highlight">
-            베타 테스트 파트너십은 선착순 3곳으로 마감됩니다.<br>
-            지금 바로 문의하여 귀사의 기술을 빛낼 압도적인 콘텐츠를 가장 먼저 확보하세요.
+                <!-- 직책/부서 -->
+                <div class="form-group">
+                    <label for="position">
+                        직책/부서<span class="optional">(선택)</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="position" 
+                        name="position" 
+                        placeholder="예: 선임연구원 / 기술사업화팀"
+                    >
+                </div>
+
+                <!-- 연락처 -->
+                <div class="form-group">
+                    <label for="phone">
+                        연락처 (전화번호)<span class="required">*</span>
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="010-1234-5678" 
+                        required
+                    >
+                    <p class="helper-text">가장 빠른 상담을 위해 필요합니다</p>
+                </div>
+
+                <!-- 이메일 -->
+                <div class="form-group">
+                    <label for="email">
+                        이메일 주소<span class="required">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="example@company.com" 
+                        required
+                    >
+                    <p class="helper-text">관련 자료를 보내드립니다</p>
+                </div>
+
+                <!-- 홍보가 필요한 기술/서비스 -->
+                <div class="form-group">
+                    <label for="technology">
+                        홍보가 필요한 기술/서비스<span class="required">*</span>
+                    </label>
+                    <textarea 
+                        id="technology" 
+                        name="technology" 
+                        placeholder="설명하고자 하는 기술명이나 특징을 간략히 적어주세요"
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- 영상 사용처 -->
+                <div class="form-group">
+                    <label for="purpose">
+                        영상 사용처<span class="required">*</span>
+                    </label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="">선택하세요</option>
+                        <option value="ir">투자 유치 (IR)</option>
+                        <option value="marketing">대중 홍보</option>
+                        <option value="education">내부 교육</option>
+                        <option value="exhibition">전시/박람회</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+
+                <!-- 기타 문의 내용 -->
+                <div class="form-group">
+                    <label for="message">
+                        기타 문의 내용<span class="optional">(선택)</span>
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="추가로 전달하고 싶은 내용이 있다면 자유롭게 작성해주세요"
+                    ></textarea>
+                </div>
+
+                <!-- 개인정보 동의 -->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <span>
+                            <span class="privacy-link" onclick="showPrivacyPolicy()">개인정보 수집 및 이용</span>에 동의합니다. <span class="required">*</span>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-container">
+                    <button type="submit" class="btn-submit">
+                        🎁 무료 영상 제작 파트너 신청하기
+                    </button>
+                </div>
+            </form>
         </div>
-        
-        <a href="mailto:contact@example.com" class="btn btn-primary">➡️ 지금 바로 '베타 파트너' 신청하기 </a>
-        <br>
-    </section>
+
+        <!-- Success Page -->
+        <div class="success-page" id="successPage">
+            <div class="success-icon">✅</div>
+            <h2>신청이 성공적으로 접수되었습니다!</h2>
+            <p>
+                R&D 콘텐츠 커뮤니케이터의 베타 파트너가 되신 것을 환영합니다.
+            </p>
+            <p>
+                기재해주신 연락처로 <strong style="color: #0A68FF;">영업일 기준 2일 이내</strong> 담당자가 직접 연락드릴 예정입니다.
+            </p>
+            <div class="contact-info">
+                <p><strong>추가 문의:</strong> happybeen11@naver.com</p>
+            </div>
+            <a href="#" class="btn-home" onclick="location.reload()">메인 페이지로 돌아가기</a>
+        </div>
+    </div>
 
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        // Form submission
+        document.getElementById('betaPartnerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
             });
+
+            // Log data (in production, send to backend)
+            console.log('Form submitted:', data);
+
+            // Show success page
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('successPage').classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Animate on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
+        // Privacy policy popup
+        function showPrivacyPolicy() {
+            alert('개인정보 수집 및 이용 안내\n\n수집 항목: 회사/기관명, 담당자 성함, 연락처, 이메일 등\n수집 목적: 베타 파트너 상담 및 서비스 제공\n보유 기간: 상담 완료 후 1년\n\n귀하는 개인정보 수집 및 이용을 거부할 권리가 있으며, 거부 시 서비스 신청이 제한될 수 있습니다.');
+        }
 
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s, transform 0.6s';
-            observer.observe(section);
+        // Input validation
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^0-9]/g, '');
+            if (value.length > 3 && value.length <= 7) {
+                value = value.slice(0, 3) + '-' + value.slice(3);
+            } else if (value.length > 7) {
+                value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+            }
+            e.target.value = value;
         });
     </script>
 </body>
-
 </html>
-
-
-
-
